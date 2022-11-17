@@ -8,7 +8,10 @@ namespace HRLib
 {
     public abstract class Emp
     {
-
+         static Emp()
+        {
+            count = 1000;
+        }
 
         public Emp()
         {
@@ -23,7 +26,7 @@ namespace HRLib
 
         }
 
-        private static int count = 1000;
+        private static int count;
 
         private int id;
 
